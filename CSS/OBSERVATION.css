@@ -1,0 +1,861 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto+Mono:wght@300&display=swap');
+
+@font-face {
+    font-family: "Futura";
+    src: url("../Ressource/POLICE/Futura/FuturaPTLight.otf") format("truetype");
+  }
+  
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background: black;
+    margin: 0;
+    color: white;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Futura', monospace;
+    z-index: 1;
+    position: absolute;
+    z-index: 10;
+    position: fixed;
+}
+
+.fondecran{
+    position: absolute;
+    top:0;
+    height: 100vh;
+    width: 100vw;
+    filter: brightness(50%);
+    left: 0;
+    z-index: 10;
+    background-image: url("../Ressource/Image/bg-stars.png");
+}
+
+.fond2{
+    position: absolute;
+    background-image: url("../Ressource/Image/bg-glow.png");
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+
+}
+
+.relative{
+    position: relative;
+}
+
+
+
+nav{  
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    flex-direction: column;
+    padding: 20px 10px;
+    align-items: center;
+    justify-content: center;  
+    z-index: 9999;
+}
+
+nav ul{
+    display: flex;
+    gap: 50px;
+    margin-left: -72px;
+}
+
+nav ul li{
+    list-style: none;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'Futura', monospace;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+nav ul li a:hover{
+    color: rgb(0, 136, 255);
+    transition: all ease 0.3s;
+}
+
+/* MERCURE CSS */
+
+#MERCURE{
+    position: absolute;
+    z-index: 500;
+}
+
+.MERCUREdevant{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 50px;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    background-color: transparent;
+    opacity: 0.3;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    z-index: -1000;
+}
+
+.MERCUREderriere{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 10;
+    transform: translate(-50%,-50%);
+    background-color: transparent;
+    opacity: 0.3;
+    border-bottom: 1px solid gray;
+}
+
+
+/* VENUS CSS */
+
+#VENUS{
+    position: absolute;
+    z-index: 500;
+}
+
+.VENUSdevant{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0.3;
+    width: 265px;
+    height: 75px;
+    z-index: -1000;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    background-color: transparent;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.VENUSderriere{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0.3;
+    width: 265px;
+    height: 75px;
+    border-radius: 50%;
+    z-index: 10;
+    transform: translate(-50%,-50%);
+    background-color: transparent;
+    border-bottom: 1px solid gray;
+}
+
+
+/* TERRE CSS */
+
+#TERRE{
+    position: absolute;
+    z-index: 500;
+}
+
+.TERREdevant{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 380px;
+    opacity: 0.3;
+    z-index: -1000;
+    height: 100px;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    background-color: transparent;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.TERREderriere{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 380px;
+    opacity: 0.3;
+    height: 100px;
+    border-radius: 50%;
+    z-index: 10;
+    transform: translate(-50%,-50%);
+    background-color: transparent;
+    border-bottom: 1px solid gray;
+}
+
+
+/* MARS CSS */
+
+#MARS{
+    position: absolute;
+    z-index: 500;
+}
+
+.MARSdevant{
+    position: absolute;
+    top: 50%;
+    z-index: -1000;
+    opacity: 0.3;
+    left: 50%;
+    width: 500px;
+    height: 130px;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    background-color: transparent;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.MARSderriere{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 130px;
+    border-radius: 50%;
+    opacity: 0.3;
+    z-index: 10;
+    transform: translate(-50%,-50%);
+    background-color: transparent;
+    border-bottom: 1px solid gray;
+}
+
+/* JUPITER CSS */
+
+#JUPITER{
+    position: absolute;
+    z-index: 500;
+}
+
+.JUPITERdevant{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1000;
+    width: 650px;
+    opacity: 0.3;
+    height: 160px;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    background-color: transparent;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.JUPITERderriere{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 650px;
+    opacity: 0.3;
+    height: 160px;
+    border-radius: 50%;
+    z-index: 10;
+    transform: translate(-50%,-50%);
+    background-color: transparent;
+    border-bottom: 1px solid gray;
+}
+
+
+/* SATURNE CSS */
+
+#SATURNE{
+    position: absolute;
+    z-index: 500;
+}
+
+.SATURNEdevant{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 900px;
+    opacity: 0.3;
+    height: 250px;
+    z-index: -1000;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    background-color: transparent;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.SATURNEderriere{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 900px;
+    height: 250px;
+    border-radius: 50%;
+    opacity: 0.3;
+    z-index: 10;
+    transform: translate(-50%,-50%);
+    background-color: transparent;
+    border-bottom: 1px solid gray;
+}
+
+
+/* URANUS CSS */
+
+#URANUS{
+    position: absolute;
+    z-index: 500;
+}
+
+.URANUSdevant{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0.3;
+    z-index: -1000;
+    width: 1200px;
+    height: 350px;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    background-color: transparent;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.URANUSderriere{
+    position: absolute;
+    opacity: 0.3;
+    top: 50%;
+    left: 50%;
+    width: 1200px;
+    height: 350px;
+    border-radius: 50%;
+    z-index: 10;
+    transform: translate(-50%,-50%);
+    background-color: transparent;
+    border-bottom: 1px solid gray;
+}
+
+
+/* NEPTUNE CSS */
+
+#NEPTUNE{
+    position: absolute;
+    z-index: 500;
+}
+
+.NEPTUNEdevant{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0.3;
+    width: 1400px;
+    height: 400px;
+    z-index: -1000;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    background-color: transparent;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.NEPTUNEderriere{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1400px;
+    height: 400px;
+    border-radius: 50%;
+    opacity: 0.3;
+    z-index: 10;
+    transform: translate(-50%,-50%);
+    background-color: transparent;
+    border-bottom: 1px solid gray;
+}
+
+
+
+
+.logo{
+    cursor: pointer;
+}
+.logo img{
+    width: 80px;
+    height: 60px;
+
+}
+
+@keyframes alige {
+    0%{
+        opacity: 0;
+        height: 0;
+    }
+    100%{
+        opacity: 1;
+        height: 6vw;
+    }
+    
+}
+
+
+@keyframes alige1 {
+    0%{
+        opacity: 0;
+        height: 0;
+    }
+    100%{
+        opacity: 0.2;
+        height: 37%;
+    }
+    
+}
+
+.BLOCCENTRALEDEB{
+   display: flex;
+   position: fixed;
+   z-index: 1000000;
+   top:0;
+}
+.BLOC1D,.BLOC2D,.BLOC3D,.BLOC4D,.BLOC5D{
+    z-index: 1000000;
+    background-color:rgba(0, 0, 0, 1);
+}
+
+.BLOC1D{
+    width: 10vw;
+    height: 100vh;
+    animation: 1.2s TRANSITION1 cubic-bezier(0.15, 0.26, 0.01, 1.01) forwards;
+    animation-delay: 0.5s;
+}
+
+.BLOC2D{
+    width: 20vw;
+    height: 100vh;
+    animation: 1.2s TRANSITION1 cubic-bezier(0.15, 0.26, 0.01, 1.01) forwards;
+    animation-delay: 0.2s;
+}
+
+.BLOC3D{
+    width: 40vw;
+    height: 0vh;
+    animation: 1.2s TRANSITION1 cubic-bezier(0.15, 0.26, 0.01, 1.01);
+}
+
+.BLOC4D{
+    width: 20vw;
+    height: 100vh;
+    animation: 1.2s TRANSITION1 cubic-bezier(0.15, 0.26, 0.01, 1.01) forwards;
+    animation-delay: 0.2s;
+}
+
+.BLOC5D{
+    width: 10vw;
+    height: 100vh;
+    animation: 1.2s TRANSITION1 cubic-bezier(0.15, 0.26, 0.01, 1.01) forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes TRANSITION1 {
+    0%{
+        height: 100vh;
+    }
+    100%{
+        height: 0vh;
+    }
+    
+}
+
+.BLOCCENTRALEFIN{
+    display: flex;
+    z-index: 10000000;
+ }
+
+ .BLOC1F{
+    width: 10vw;
+    height: 0vh;
+    position: fixed;
+    bottom: 0;
+    left: 0vw;
+}
+
+.BLOC2F{
+    width: 20vw;
+    height: 0vh;
+    position: fixed;
+    bottom: 0;
+    left: 10vw;
+}
+
+.BLOC3F{
+    width: 40vw;
+    height: 0vh;
+    position: fixed;
+    bottom: 0;
+    left: 30vw;
+}
+
+.BLOC4F{
+    width: 20vw;
+    height: 0vh;
+    position: fixed;
+    bottom: 0;
+    left: 70vw;
+}
+
+.BLOC5F{
+    width: 10vw;
+    height: 0vh;
+    position: fixed;
+    bottom: 0;
+    left: 90vw;
+}
+
+
+.BLOC1F,.BLOC2F,.BLOC3F,.BLOC4F,.BLOC5F{
+    z-index: 1000000;
+    background-color:rgb(0, 0, 0); 
+}
+
+.animate{
+    animation: 1.2s TRANSITION2 cubic-bezier(0.15, 0.26, 0.01, 1.01) forwards;
+}
+.animate2{
+    animation: 1.2s TRANSITION2 cubic-bezier(0.15, 0.26, 0.01, 1.01) forwards;
+    animation-delay: 0.2s;
+}
+.animate3{
+    animation: 1.2s TRANSITION2 cubic-bezier(0.15, 0.26, 0.01, 1.01) forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes TRANSITION2 {
+    0%{
+        height: 0vh;
+    }
+    100%{
+        height: 100vh;
+    }
+    
+}
+
+
+/* Commencement du CSS pour le CANVAS */
+
+#SystemSolaire{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.PLANETE{
+    background-color: transparent;
+    position: absolute;
+    color: grey;
+    display: flex;
+    font-size: 20px;
+    width: 80%;
+    left: 10%;
+    bottom: 5%;
+    justify-content:center;
+    gap: 40px;
+    z-index: 5000;
+}
+
+.PlaneteMER:hover{
+    cursor: pointer;
+}
+
+.PlaneteVEN:hover{
+    cursor: pointer;
+}
+
+.PlaneteTER:hover{
+    cursor: pointer;
+}
+
+.PlaneteMAR:hover{
+    cursor: pointer;
+}
+
+.PlaneteJUP:hover{
+    cursor: pointer;
+}
+
+.PlaneteSAT:hover{
+    cursor: pointer;
+}
+
+.PlaneteURA:hover{
+    cursor: pointer;
+}
+
+.PlaneteNEP:hover{
+    cursor: pointer;
+}
+
+#TexteMERCURE{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    font-size: 13px;
+}
+
+#KMMERCURE{
+    font-size: 20px;
+}
+
+#TexteMER{
+    opacity: 0;
+}
+
+#TexteTERRE{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    font-size: 13px;
+}
+
+#KMTERRE{
+    font-size: 20px;
+}
+
+#TexteTER{
+    opacity: 0;
+}
+
+#TexteVENUS{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    font-size: 13px;
+}
+
+#KMVENUS{
+    font-size: 20px;
+}
+
+#TexteVEN{
+    opacity: 0;
+}
+
+#TexteMARS{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    font-size: 13px;
+}
+
+#KMMARS{
+    font-size: 20px;
+}
+
+#TexteMAR{
+    opacity: 0;
+}
+
+#TexteJUPITER{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 38%;
+    left: 100%;
+    font-size: 13px;
+}
+
+#KMJUPITER{
+    font-size: 20px;
+}
+
+#TexteJUP{
+    opacity: 0;
+}
+
+#TexteSATURNE{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 42%;
+    left: 100%;
+    font-size: 13px;
+}
+
+#KMSATURNE{
+    font-size: 20px;
+}
+
+#TexteSAT{
+    opacity: 0;
+}
+
+#TexteURANUS{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 44%;
+    left: 100%;
+    font-size: 13px;
+}
+
+#KMURANUS{
+    font-size: 20px;
+}
+
+#TexteURA{
+    opacity: 0;
+}
+
+#TexteNEPTUNE{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 45%;
+    left: 100%;
+    font-size: 13px;
+}
+
+#KMNEPTUNE{
+    font-size: 20px;
+}
+
+#TexteNEP{
+    opacity: 0;
+}
+
+.TEXTEANIMATION{
+    animation: TexteApparition 0.9s linear;
+}
+
+
+.TEXTEDISPARITION{
+    animation: TexteDisparition 0.9s linear;
+}
+
+
+
+#svgjupiter{
+    margin-left: 40px;
+}
+
+#svgsaturne{
+    margin-left: 40px;
+}
+
+#svguranus{
+    margin-left: 20px;
+}
+
+#svgneptune{
+    margin-left: 10px;
+}
+
+@keyframes TexteApparition {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+@keyframes TexteDisparition {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+
+
+.INFORMATION{
+    background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 100%);
+    border-radius: 30px;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    position: absolute;
+    width: 70vw;
+    height: 15vh;
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(2px);
+    overflow: hidden;
+}
+
+table{
+    z-index: 15;
+}
+
+tbody, thead{
+    text-align: center;
+}
+
+thead{
+    color: #ffffff;
+}
+
+tbody, tfoot{
+    color: #a2a2a2;
+}
+
+.Source{
+    padding-left: 25px;
+    visibility: hidden;
+}
+
+.Donnee{
+    height: 5vw;
+}
+
+th{
+    text-transform:uppercase;
+}
+
+.float{
+    float: left;
+
+}
+
+.float img{
+    height: 20px;
+    width: 20px;
+    margin-right: 1rem;
+}
+
+#WIKIPEDIA:hover{
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.boite1, .boite2{
+    margin: 60px 5px;
+}

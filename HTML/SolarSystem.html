@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="EL MEDIRI Azdin et ABIB Alicia">
+    <title>Shaping Future</title>
+    <link rel="stylesheet" href="../CSS/OBSERVATION.css">
+    <script src="../JAVASCRIPT/OBSERVATION.js" defer></script>
+    <script src="../JAVASCRIPT/OBSERVATION_Button.js" defer></script>
+    <link rel="icon" href="../Ressource/Image/logo.ico">
+</head>
+
+<body>
+  <div class="fondecran">
+  </div>
+  <div class="fond2">
+    <div class="INFORMATION">
+      <table>
+        <thead>
+          <tr>
+            <th>P&eacute;riode de r&eacute;volution</th>
+            <th>P&eacute;riode de rotation</th>
+            <th>Vitesse orbitale moyenne</th>
+            <th>Vitesse de lib&eacute;ration</th>
+            <th>Gravit&eacute; de surface</th>
+            <th>Satellites connus</th>
+            <th>Temp&eacute;rature de surface MAX</th>
+            <th>Temp&eacute;rature de surface MIN</th>
+            <th>Masse totale</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="Donnee">
+            <td id="PeriodeRE"></td>
+            <td id="PeriodeRO"></td>
+            <td id="VitesseOrbi"></td>
+            <td id="VitesseLiber"></td>
+            <td id="Gravite"></td>
+            <td id="Satelitte"></td>
+            <td id="TemperatureMAX"></td>
+            <td id="TemperatureMIN"></td>
+            <td id="MASSE"></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="Source" colspan="9"><span class="float"></span> Wikip&eacute;dia (Cliquer <span id="WIKIPEDIA" onclick="Wikipedia()">ICI</span> pour plus d'informations sur <span id="recherche"></span>)</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <div class="BLOCCENTRALEDEB">
+      <div class="BLOC1D"></div>
+      <div class="BLOC2D"></div>
+      <div class="BLOC3D"></div>
+      <div class="BLOC4D"></div>
+      <div class="BLOC5D"></div>
+    </div>
+    <div class="BLOCCENTRALEFIN">
+      <div class="BLOC1F"></div>
+      <div class="BLOC2F"></div>
+      <div class="BLOC3F"></div>
+      <div class="BLOC4F"></div>
+      <div class="BLOC5F"></div>
+    </div>
+    <div class="MERCUREdevant"></div>
+    <div class="MERCUREderriere"></div>
+    <div id="MERCURE">
+      <div id="TexteMER">
+        <p id="TexteMERCURE">Mercure<br><span id="KMMERCURE">57 909 227 km</span><br>depuis le soleil</p>
+        <svg width="100" height="200">
+          <line x1="20" y1="202" x2="51" y2="150" style="stroke:rgb(255, 255, 255); stroke-width:1;"></line>
+          <line x1="51" y1="150" x2="90" y2="150" style="stroke:rgb(255, 255, 255); stroke-width:1;"></line>
+        </svg>	
+      </div>
+      <img src="../Ressource/Image/p-mercury.png" alt="mercure">
+    </div>
+
+    <div class="VENUSdevant"></div>
+    <div class="VENUSderriere"></div>
+    <div id="VENUS">
+      <div id="TexteVEN">
+        <p id="TexteVENUS">Venus<br><span id="KMVENUS">108 209 475 km</span><br>depuis le soleil</p>
+        <svg width="100" height="200">
+          <line x1="20" y1="202" x2="51" y2="150" style="stroke:rgb(255, 255, 255); stroke-width:1;"></line>
+          <line x1="51" y1="150" x2="90" y2="150" style="stroke:rgb(255, 255, 255); stroke-width:1;"></line>
+        </svg>	
+      </div>
+      <img src="../Ressource/Image/p-venus.png" alt="venus">
+    </div>
+
+    <div class="TERREdevant"></div>
+    <div class="TERREderriere"></div>
+    <div id="TERRE">
+      <div id="TexteTER">
+        <p id="TexteTERRE">La terre<br><span id="KMTERRE">149 598 262 km</span><br>depuis le soleil</p>
+        <svg width="100" height="200">
+          <line x1="20" y1="202" x2="51" y2="150" style="stroke:rgb(255, 255, 255); stroke-width:1;"></line>
+          <line x1="51" y1="150" x2="90" y2="150" style="stroke:rgb(255, 255, 255); stroke-width:1;"></line>
+        </svg>	
+      </div>
+      <img src="../Ressource/Image/p-earth.png" alt="terre">
+    </div>
+
+    <div class="MARSdevant"></div>
+    <div class="MARSderriere"></div>
+    <div id="MARS">
+      <div id="TexteMAR">
+        <p id="TexteMARS">Mars<br><span id="KMMARS">227 943 824 km</span><br>depuis le soleil</p>
+        <svg width="100" height="200">
+          <line x1="20" y1="202" x2="51" y2="150" style="stroke:rgb(255, 255, 255); stroke-width:1;"></line>
+          <line x1="51" y1="150" x2="90" y2="150" style="stroke:rgb(255, 255, 255); stroke-width:1;"></line>
+        </svg>	
+      </div>
+      <img src="../Ressource/Image/p-mars.png" alt="mars">
+    </div>
+
+    <div class="JUPITERdevant"></div>
+    <div class="JUPITERderriere"></div>
+    <div id="JUPITER">
+      <div id="TexteJUP">
+        <p id="TexteJUPITER">Jupiter<br><span id="KMJUPITER">778 340 821 km</span><br>depuis le soleil</p>
+        <svg id="svgjupiter" width="100" height="200">
+          <line x1="20" y1="202" x2="51" y2="150" style="stroke:rgb(255, 255, 255); stroke-width:1;"></line>
+          <line x1="51" y1="150" x2="90" y2="150" style="stroke:rgb(255, 255, 255); stroke-width:1;"></line>
+        </svg>	
+      </div>
+      <img src="../Ressource/Image/p-jupiter.png" alt="jupiter">
+    </div>
+
+    <div class="SATURNEdevant"></div>
+    <div class="SATURNEderriere"></div>
+    <div id="SATURNE">
+      <div id="TexteSAT">
+        <p id="TexteSATURNE">Saturne<br><span id="KMSATURNE">1 426 666 422 km</span><br>depuis le soleil</p>
+        <svg id="svgsaturne" width="100" height="200">
+          <line x1="20" y1="202" x2="51" y2="150" style="stroke:rgb(255, 255, 255); stroke-width:1;"></line>
+          <line x1="51" y1="150" x2="90" y2="150" style="stroke:rgb(255, 255, 255); stroke-width:1;"></line>
+        </svg>	
+      </div>
+      <img src="../Ressource/Image/p-saturn.png" alt="saturne">
+    </div>
+
+    <div class="URANUSdevant"></div>
+    <div class="URANUSderriere"></div>
+    <div id="URANUS">
+      <div id="TexteURA">
+        <p id="TexteURANUS">Uranus<br><span id="KMURANUS">2 870 658 186 km</span><br>depuis le soleil</p>
+        <svg id="svguranus" width="100" height="200">
+          <line x1="20" y1="202" x2="51" y2="150" style="stroke:rgb(255, 255, 255); stroke-width:1;"></line>
+          <line x1="51" y1="150" x2="90" y2="150" style="stroke:rgb(255, 255, 255); stroke-width:1;"></line>
+        </svg>	
+      </div>
+      <img src="../Ressource/Image/p-uranus.png" alt="uranus">
+    </div>
+
+    <div class="NEPTUNEdevant"></div>
+    <div class="NEPTUNEderriere"></div>
+    <div id="NEPTUNE">
+      <div id="TexteNEP">
+        <p id="TexteNEPTUNE">Neptune<br><span id="KMNEPTUNE">4 498 396 441 km</span><br>depuis le soleil</p>
+        <svg id="svgneptune" width="100" height="200">
+          <line x1="20" y1="202" x2="51" y2="150" style="stroke:rgb(255, 255, 255); stroke-width:1;"></line>
+          <line x1="51" y1="150" x2="90" y2="150" style="stroke:rgb(255, 255, 255); stroke-width:1;"></line>
+        </svg>	
+      </div>
+      <img src="../Ressource/Image/p-neptune.png" alt="neptune">
+    </div>
+
+    <div >
+    </div>
+
+    <div class="PLANETE">
+      <p class="PlaneteMER" onmouseenter="ButtonMERON()" onmouseleave="ButtonMEROFF()" onclick="ButtonMER()">Mercure</p>
+      <p class="PlaneteVEN" onmouseenter="ButtonVENON()" onmouseleave="ButtonVEROFF()" onclick="ButtonVEN()">Venus</p>
+      <p class="PlaneteTER" onmouseenter="ButtonTERON()" onmouseleave="ButtonTEROFF()" onclick="ButtonTER()">La terre</p>
+      <p class="PlaneteMAR" onmouseenter="ButtonMARON()" onmouseleave="ButtonMAROFF()" onclick="ButtonMAR()">Mars</p>
+      <p class="PlaneteJUP" onmouseenter="ButtonJUPON()" onmouseleave="ButtonJUPOFF()" onclick="ButtonJUP()">Jupiter</p>
+      <p class="PlaneteSAT" onmouseenter="ButtonSATON()" onmouseleave="ButtonSATOFF()" onclick="ButtonSAT()">Saturne</p>
+      <p class="PlaneteURA" onmouseenter="ButtonURAON()" onmouseleave="ButtonURAOFF()" onclick="ButtonURA()">Uranus</p>
+      <p class="PlaneteNEP" onmouseenter="ButtonNEPON()" onmouseleave="ButtonNEPOFF()" onclick="ButtonNEP()">Neptune</p>
+    </div>
+
+    <canvas id="SystemSolaire" width="1500" height="800">
+      Votre version ne supporte pas le CANVAS
+    </canvas>
+  </div>
+</body>

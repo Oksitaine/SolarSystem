@@ -1,0 +1,193 @@
+@font-face {
+  font-family: "Futura";
+  src: url("../Ressource/POLICE/Futura/FuturaPTLight.otf") format("truetype");
+}
+
+
+
+nav .navbarxhtml{
+  font-family: 'Futura', monospace;
+}
+
+
+.NAVBAR {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  height: 0vh;
+  z-index: -5;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  transition: 1s cubic-bezier(0.15, 0.26, 0.01, 1.01);
+}
+.boite1{
+    position: absolute;
+    top: 6.45%;
+    left: 5%;
+}
+
+.boite2{
+    position: absolute;
+    top: 6.45%;
+    right: 5%;
+}
+
+.prev {
+    cursor: pointer;
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    backdrop-filter: blur(2px);
+    background-color: rgb(28, 28, 28,0.3);
+    margin: 0 5px;
+    border-radius: 50%;
+    transition: 0.5s;
+  
+    position: relative;
+  }
+  
+  .prev:hover {
+    background-color:rgb(0, 136, 255)
+  }
+  
+  .prev span {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 3px solid #fff;
+    transform: 0.5s;
+    top: 50%;
+    left: 34%;
+    transform: translateY(-50%) rotate(135deg);
+    border-left: none;
+    border-top: none;
+    transition: .5s;
+  }
+  
+  .prev span::before{
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 3px;
+      background-color: #fff;
+      transform-origin: right;
+      transform: rotate(45deg) translate(0, 13px) scale(0);
+      transition: .5s;
+  }
+  
+  .prev:hover span{
+      left: 30%;
+      transition: .5s;
+  }
+  .prev:hover span:before{
+      transform: rotate(45deg) translate(0, 13px) scale(1);
+      transition: .5s;
+  }
+
+.next {
+    cursor: pointer;
+    backdrop-filter: blur(2px);
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(28, 28, 28,0.3);
+    margin: 0 5px;
+    border-radius: 50%;
+    transition: 0.5s;
+  
+    position: relative;
+  }
+  
+  .next:hover {
+    background-color:rgb(0, 136, 255)
+  }
+  
+  .next span {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 3px solid #fff;
+    transform: 0.5s;
+    top: 50%;
+    right: 34%;
+    transform: translateY(-50%) rotate(-45deg);
+    border-left: none;
+    border-top: none;
+    transition: .5s;
+  }
+  
+  .next span::before{
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 3px;
+      background-color: #fff;
+      transform-origin: right;
+      transform: rotate(45deg) translate(0, 13px) scale(0);
+      transition: .5s;
+  }
+  
+  .next:hover span{
+      right: 30%;
+      transition: .5s;
+  }
+  .next:hover span:before{
+      transform: rotate(45deg) translate(0, 13px) scale(1);
+      transition: .5s;
+  }
+
+
+.Naissance {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: visible;
+  padding-left: 5vw;
+  margin-top: 2vh;
+  gap: 10px;
+}
+
+.NaissanceDeUniverse:hover li:nth-of-type(1) {
+  animation: opaciteur ease-in-out 0.7s;
+}
+
+.NaissanceDeUniverse:hover li:nth-of-type(2) {
+  animation-delay: 0.4s;
+  animation: opaciteur ease-in-out 0.7s;
+}
+
+.NaissanceDeUniverse:hover li:nth-of-type(3) {
+  animation-delay: 0.6s;
+  animation: opaciteur ease-in-out 0.7s;
+}
+
+.NaissanceDeUniverse:hover li:nth-of-type(4) {
+  animation-delay: 0.8s;
+  animation: opaciteur ease-in-out 0.7s;
+}
+
+#SpiraleL,
+#Voielacte,
+#nainejaune,
+#Systemesolaire {
+  color: grey;
+}
+
+#SpiraleL:hover,
+#Voielacte:hover,
+#nainejaune:hover,
+#Systemesolaire:hover {
+  color: rgb(255, 255, 255);
+  border-left: 3px white solid;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+
+@keyframes opaciteur {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
